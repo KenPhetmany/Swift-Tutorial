@@ -9,7 +9,33 @@ import SwiftUI
 
 struct MeetingView: View {
     var body: some View {
-        Text("Hello, world!").padding()
+        VStack {
+            ProgressView(value: 5, total: 15)
+            HStack{
+                VStack(alignment: .leading) {
+                    Text("Seconds Elapsed").font(.caption)
+                    Label("300", systemImage: "hourglass.bottomhalf.fill")
+                }
+                Spacer()
+                VStack(alignment: .leading) {
+                    Text("Seconds Left").font(.caption)
+                    Label("600", systemImage: "hourglass.tophalf.fill")
+                }
+            }
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel(Text("Time Remaining"))
+            .accessibilityValue(Text("10 Minutes"))
+            Circle().strokeBorder(lineWidth: 24, antialiased: true)
+            HStack{
+                Text("Speaker 1 of 3")
+                Spacer()
+                Button(action: {}){
+                    Image(systemName: "forward.fill")
+                }
+                .accessibilityLabel(Text("Next speaker"))
+            }
+        }
+        .padding()
     }
 }
 
