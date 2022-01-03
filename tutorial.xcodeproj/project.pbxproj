@@ -14,6 +14,11 @@
 		249F2876275250110038FBAB /* tutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249F2875275250110038FBAB /* tutorialTests.swift */; };
 		249F2880275250110038FBAB /* tutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249F287F275250110038FBAB /* tutorialUITests.swift */; };
 		249F2882275250110038FBAB /* tutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249F2881275250110038FBAB /* tutorialUITestsLaunchTests.swift */; };
+		24AAAB822782AFE700625986 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAAB812782AFE700625986 /* Theme.swift */; };
+		24AAAB842782B11C00625986 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAAB832782B11C00625986 /* DailyScrum.swift */; };
+		24AAAB862782B1D600625986 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AAAB852782B1D600625986 /* CardView.swift */; };
+		24D9E1F32782BA6B00516B49 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9E1F22782BA6B00516B49 /* TrailingIconLabelStyle.swift */; };
+		24D9E1F52782BC1600516B49 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9E1F42782BC1600516B49 /* ScrumsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		249F287B275250110038FBAB /* tutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		249F287F275250110038FBAB /* tutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorialUITests.swift; sourceTree = "<group>"; };
 		249F2881275250110038FBAB /* tutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		24AAAB812782AFE700625986 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		24AAAB832782B11C00625986 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		24AAAB852782B1D600625986 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		24D9E1F22782BA6B00516B49 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		24D9E1F42782BC1600516B49 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,12 @@
 		249F2863275250100038FBAB /* tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				24AAAB802782AA1400625986 /* Models */,
 				249F2864275250100038FBAB /* tutorialApp.swift */,
+				24AAAB852782B1D600625986 /* CardView.swift */,
 				249F2866275250100038FBAB /* MeetingView.swift */,
+				24D9E1F22782BA6B00516B49 /* TrailingIconLabelStyle.swift */,
+				24D9E1F42782BC1600516B49 /* ScrumsView.swift */,
 				249F2868275250110038FBAB /* Assets.xcassets */,
 				249F286A275250110038FBAB /* Preview Content */,
 			);
@@ -125,6 +139,15 @@
 				249F2881275250110038FBAB /* tutorialUITestsLaunchTests.swift */,
 			);
 			path = tutorialUITests;
+			sourceTree = "<group>";
+		};
+		24AAAB802782AA1400625986 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24AAAB832782B11C00625986 /* DailyScrum.swift */,
+				24AAAB812782AFE700625986 /* Theme.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24AAAB842782B11C00625986 /* DailyScrum.swift in Sources */,
+				24D9E1F32782BA6B00516B49 /* TrailingIconLabelStyle.swift in Sources */,
+				24AAAB822782AFE700625986 /* Theme.swift in Sources */,
+				24D9E1F52782BC1600516B49 /* ScrumsView.swift in Sources */,
 				249F2867275250100038FBAB /* MeetingView.swift in Sources */,
 				249F2865275250100038FBAB /* tutorialApp.swift in Sources */,
+				24AAAB862782B1D600625986 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,9 +444,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tutorial/Preview Content\"";
+				DEVELOPMENT_TEAM = 7QT35DPC8M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -426,13 +456,15 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = personal.tutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.tutorial.kenphetmany;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,9 +476,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tutorial/Preview Content\"";
+				DEVELOPMENT_TEAM = 7QT35DPC8M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -454,13 +488,15 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = personal.tutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.tutorial.kenphetmany;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
